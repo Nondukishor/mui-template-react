@@ -1,7 +1,7 @@
 import {createTheme} from '@mui/material/styles'
 const theme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: 'light',
     primary: {
       main: '#2196f3',
       primary: '#0690ff',
@@ -50,6 +50,24 @@ const theme = createTheme({
       primary: '#000',
       secondary: '#000',
       disabled: 'rgba(0, 0, 0, 0.38)',
+    },
+    common: {
+      primary: '#038edc',
+      primaryLight: 'rgb(3 141 221 / 60%)',
+      success: '#51d28c',
+      successLight: '#51d28c',
+      secondary: '#74788d',
+      secondaryLight: 'rgb(116 120 141 / 50%)',
+      danger: '#f34e4e',
+      dangerLight: '#f34e4e',
+      info: '#5fd0f3',
+      infoLight: '#5fd0f3',
+      dark: '#000000',
+      darkLight: '#000000',
+      warning: `#f7cc53`,
+      warningLight: '#f7cc53',
+      light: '#ffffff',
+      link: '#038edc',
     },
   },
   overrides: {},
