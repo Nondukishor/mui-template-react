@@ -1,11 +1,19 @@
-import { ThemeProvider } from '@mui/material';
-import theme from './theme';
+import theme from './theme'
+import {ThemeProvider, CssBaseline} from '@mui/material'
+import {BrowserRouter} from 'react-router-dom'
+import MainRoute from './routes/MainRoute'
+import LayoutContextProvider from './Context/LayoutContext'
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <h1>Hello</h1>
-    </ThemeProvider>
-  );
+    <LayoutContextProvider>
+      <BrowserRouter>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <MainRoute />
+        </ThemeProvider>
+      </BrowserRouter>
+    </LayoutContextProvider>
+  )
 }
 
-export default App;
+export default App
